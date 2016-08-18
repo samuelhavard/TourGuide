@@ -5,6 +5,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.example.android.tourguide.Adapter.ItemAdapter;
@@ -29,14 +30,22 @@ public class TabTwoFragment extends Fragment {
 
         final ArrayList<TourItem> tourItems = new ArrayList<>();
 
-        tourItems.add(new TourItem("Tab Two Test One"));
-        tourItems.add(new TourItem("Tab Two Test Two"));
-        tourItems.add(new TourItem("Tab Two Test Three"));
+        tourItems.add(new TourItem("Tab Two Test One", "Two two"));
+        tourItems.add(new TourItem("Tab Two Test Two", "two two"));
+        tourItems.add(new TourItem("Tab Two Test Three", "two two"));
 
         ItemAdapter itemAdapter = new ItemAdapter(getActivity(), tourItems);
 
         ListView listView = (ListView) rootView.findViewById(R.id.list);
         listView.setAdapter(itemAdapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+            }
+        });
+
         return rootView;
     }
 }

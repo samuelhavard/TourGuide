@@ -6,9 +6,15 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ListView;
 import android.widget.TextView;
 
+import com.example.android.tourguide.Adapter.ItemAdapter;
+import com.example.android.tourguide.Classes.TourItem;
 import com.example.android.tourguide.R;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -24,9 +30,26 @@ public class TabFourFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        TextView textView = new TextView(getActivity());
-        textView.setText(R.string.hello_blank_fragment);
-        return textView;
-    }
+        View rootView = inflater.inflate(R.layout.word_list, container, false);
 
+        final ArrayList<TourItem> tourItems = new ArrayList<>();
+
+        tourItems.add(new TourItem("Four Test One", "Four Two"));
+        tourItems.add(new TourItem("Four Test Two", "Four Tow"));
+        tourItems.add(new TourItem("Four Test Three", "Four Two"));
+
+        ItemAdapter itemAdapter = new ItemAdapter(getActivity(), tourItems);
+
+        ListView listView = (ListView) rootView.findViewById(R.id.list);
+        listView.setAdapter(itemAdapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+            }
+        });
+
+        return rootView;
+    }
 }

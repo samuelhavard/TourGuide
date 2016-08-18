@@ -34,6 +34,11 @@ public class ItemAdapter extends ArrayAdapter<TourItem> {
         TextView titleTextView = (TextView) listItemView.findViewById(R.id.title_text_view);
         titleTextView.setText(currentItem.getTourTitle());
 
+        TextView addressTextView = (TextView) listItemView.findViewById(R.id.address_text_view);
+        addressTextView.setText(currentItem.getAddress());
+
+
+
         return listItemView;
     }
 }

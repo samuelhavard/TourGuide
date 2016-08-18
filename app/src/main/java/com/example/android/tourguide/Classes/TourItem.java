@@ -6,12 +6,18 @@ package com.example.android.tourguide.Classes;
 public class TourItem {
 
     private String mTitle;
+    private String mAddress;
 
-    public TourItem(String title) {
+    public TourItem(String title , String address) {
         mTitle = title;
+        mAddress = address;
     }
 
     public String getTourTitle() {
         return mTitle;
+    }
+
+    public String getAddress() {
+        return mAddress;
     }
 }
