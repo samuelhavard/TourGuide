@@ -45,7 +45,7 @@ public class TabThreeFragment extends Fragment {
         tourItems.add(new TourItem("Three Test Two", "Two three"));
         tourItems.add(new TourItem("Three Test Three", "Two Four"));
 
-        ItemAdapter itemAdapter = new ItemAdapter(getActivity(), tourItems);
+        ItemAdapter itemAdapter = new ItemAdapter(getActivity(), tourItems, R.color.EntertainmentPrimary);
 
         ListView listView = (ListView) rootView.findViewById(R.id.list);
         listView.setAdapter(itemAdapter);

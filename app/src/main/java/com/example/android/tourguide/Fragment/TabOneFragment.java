@@ -39,7 +39,7 @@ public class TabOneFragment extends Fragment {
         tourItems.add(new TourItem("Test Two", "One Two"));
         tourItems.add(new TourItem("Test Three", "One Two"));
 
-        ItemAdapter itemAdapter = new ItemAdapter(getActivity(), tourItems);
+        ItemAdapter itemAdapter = new ItemAdapter(getActivity(), tourItems, R.color.HistoricSitesPrimary);
 
         ListView listView = (ListView) rootView.findViewById(R.id.list);
         listView.setAdapter(itemAdapter);

@@ -1,6 +1,7 @@
 package com.example.android.tourguide.Adapter;
 
 import android.app.Activity;
+import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,9 +18,11 @@ import java.util.ArrayList;
  * Created by samue_000 on 8/16/2016.
  */
 public class ItemAdapter extends ArrayAdapter<TourItem> {
+    private int mBackgroundColor;
 
-    public ItemAdapter(Activity context, ArrayList<TourItem> items) {
+    public ItemAdapter(Activity context, ArrayList<TourItem> items, int colorResource) {
         super(context, 0, items);
+        mBackgroundColor = colorResource;
     }
 
     @Override
@@ -46,6 +49,10 @@ public class ItemAdapter extends ArrayAdapter<TourItem> {
         } else {
             icon.setVisibility(View.GONE);
         }
+
+        View listContainer = listItemView.findViewById(R.id.list_container);
+        int color = ContextCompat.getColor(getContext(), mBackgroundColor);
+        listContainer.setBackgroundColor(color);
 
         return listItemView;
     }
