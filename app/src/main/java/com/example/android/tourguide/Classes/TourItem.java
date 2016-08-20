@@ -5,12 +5,20 @@ package com.example.android.tourguide.Classes;
  */
 public class TourItem {
 
+    private static final int NO_IMAGE_PROVIDED = -1;
     private String mTitle;
     private String mAddress;
+    private int mImageResource = NO_IMAGE_PROVIDED;
 
     public TourItem(String title , String address) {
         mTitle = title;
         mAddress = address;
+    }
+
+    public TourItem(String title, String address, int image) {
+        mTitle = title;
+        mAddress = address;
+        mImageResource = image;
     }
 
     public String getTourTitle() {
@@ -19,5 +27,13 @@ public class TourItem {
 
     public String getAddress() {
         return mAddress;
+    }
+
+    public int getImageResource() {
+        return mImageResource;
+    }
+
+    public boolean hasImage() {
+        return mImageResource != NO_IMAGE_PROVIDED;
     }
 }

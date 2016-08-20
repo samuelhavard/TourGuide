@@ -17,7 +17,7 @@ import com.example.android.tourguide.R;
 import java.util.ArrayList;
 
 /**
- * A simple {@link Fragment} subclass.
+ * A {@link Fragment} that shows information on Tab Four.
  */
 public class TabFourFragment extends Fragment {
 
@@ -26,7 +26,13 @@ public class TabFourFragment extends Fragment {
         // Required empty public constructor
     }
 
-
+    /**
+     *
+     * @param inflater
+     * @param container
+     * @param savedInstanceState
+     * @return
+     */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -34,6 +40,7 @@ public class TabFourFragment extends Fragment {
 
         final ArrayList<TourItem> tourItems = new ArrayList<>();
 
+        //Tour item information to be displayed on Tab Four
         tourItems.add(new TourItem("Four Test One", "Four Two"));
         tourItems.add(new TourItem("Four Test Two", "Four Tow"));
         tourItems.add(new TourItem("Four Test Three", "Four Two"));

@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.android.tourguide.Classes.TourItem;
@@ -37,7 +38,14 @@ public class ItemAdapter extends ArrayAdapter<TourItem> {
         TextView addressTextView = (TextView) listItemView.findViewById(R.id.address_text_view);
         addressTextView.setText(currentItem.getAddress());
 
+        ImageView icon = (ImageView) listItemView.findViewById(R.id.icon_image_view);
 
+        if (currentItem.hasImage()) {
+            icon.setImageResource(currentItem.getImageResource());
+            icon.setVisibility(View.VISIBLE);
+        } else {
+            icon.setVisibility(View.GONE);
+        }
 
         return listItemView;
     }

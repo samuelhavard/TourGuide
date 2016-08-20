@@ -15,13 +15,17 @@ import com.example.android.tourguide.R;
 import java.util.ArrayList;
 
 /**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * to handle interaction events.
- * create an instance of this fragment.
+ * A {@link Fragment} that shows information on Tab One.
  */
 public class TabOneFragment extends Fragment {
 
+    /**
+     *
+     * @param inflater
+     * @param container
+     * @param savedInstanceState
+     * @return
+     */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -30,6 +34,7 @@ public class TabOneFragment extends Fragment {
 
         final ArrayList<TourItem> tourItems = new ArrayList<>();
 
+        //Tour item information to be displayed on Tab One
         tourItems.add(new TourItem("Test One", "One Two"));
         tourItems.add(new TourItem("Test Two", "One Two"));
         tourItems.add(new TourItem("Test Three", "One Two"));
