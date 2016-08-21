@@ -25,11 +25,10 @@ public class TabFourFragment extends Fragment {
     }
 
     /**
-     *
-     * @param inflater
-     * @param container
-     * @param savedInstanceState
-     * @return
+     * @param inflater           is the layout inflater
+     * @param container          is the ViewGroup
+     * @param savedInstanceState is the Bundle for re-creating the fragment
+     * @return rootView as the View
      */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -48,7 +47,7 @@ public class TabFourFragment extends Fragment {
         tourItems.add(new TourItem(getString(R.string.parks_four),
                 getString(R.string.parks_address_four)));
 
-        ItemAdapter itemAdapter = new ItemAdapter(getActivity(), tourItems, R.color.ParksPrimary);
+        ItemAdapter itemAdapter = new ItemAdapter(getActivity(), tourItems, R.color.parks_primary);
 
         ListView listView = (ListView) rootView.findViewById(R.id.list);
         listView.setAdapter(itemAdapter);

@@ -15,15 +15,15 @@
 
     <!--Restaurants-->
     <string name="restaurants_one">Double O Grill</string>
-    <string name="restaurants_two">Il Barilotto Enoteca</string>
+    <string name="restaurants_two" translatable="false">Il Barilotto Enoteca</string>
     <string name="restaurants_three">Sapore Steakhouse</string>
     <string name="restaurants_four">THE TOMATO CAFE</string>
 
     <!--Restaurants addresses-->
     <string name="restaurants_address_one">Address: Wappingers Falls, NY 12590</string>
-    <string name="restaurants_address_two">1113 Main St, Fishkill, NY 12524</string>
-    <string name="restaurants_address_three">1106-1108 Main St, Fishkill, NY 12524</string>
-    <string name="restaurants_address_four">1123 Main St, Fishkill, NY 12524</string>
+    <string name="restaurants_address_two">Address: 1113 Main St, Fishkill, NY 12524</string>
+    <string name="restaurants_address_three">Address: 1106&#8211;1108 Main St, Fishkill, NY 12524</string>
+    <string name="restaurants_address_four">Address: 1123 Main St, Fishkill, NY 12524</string>
 
     <!--Entertainment-->
     <string name="entertainment_one">Clove Creek Dinner Theater</string>
@@ -48,6 +48,7 @@
     <string name="parks_address_two">Location: Philipstown / Fishkill, New York, U.S.</string>
     <string name="parks_address_three">Location: Sylvan Lake, New York, United States</string>
     <string name="parks_address_four">Location: West side of Hudson River, Esopus, New York</string>
+    <string name="location_image">Location Image</string>
 
 
 </resources>

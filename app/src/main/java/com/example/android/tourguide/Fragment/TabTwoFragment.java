@@ -19,11 +19,10 @@ import java.util.ArrayList;
 public class TabTwoFragment extends Fragment {
 
     /**
-     *
-     * @param inflater
-     * @param container
-     * @param savedInstanceState
-     * @return
+     * @param inflater           is the layout inflater
+     * @param container          is the ViewGroup
+     * @param savedInstanceState is the Bundle for re-creating the fragment
+     * @return rootView as the View
      */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -43,7 +42,7 @@ public class TabTwoFragment extends Fragment {
         tourItems.add(new TourItem(getString(R.string.restaurants_four),
                 getString(R.string.restaurants_address_four)));
 
-        ItemAdapter itemAdapter = new ItemAdapter(getActivity(), tourItems, R.color.RestaurantsPrimary);
+        ItemAdapter itemAdapter = new ItemAdapter(getActivity(), tourItems, R.color.restaurants_primary);
 
         final ListView listView = (ListView) rootView.findViewById(R.id.list);
         listView.setAdapter(itemAdapter);

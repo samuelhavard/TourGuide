@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tour Guide</string>
+    <string name="entertainment_address_four"> Dirección: 6 Crannell St , Poughkeepsie , NY 12601</string>
+    <string name="entertainment_address_one">Dirección: 18 Westage Business Center Dr # 7 , Fishkill , NY 12524</string>
+    <string name="entertainment_address_three">Dirección: 35 Market St , Poughkeepsie , NY 12601</string>
+    <string name="entertainment_address_two"> Dirección: 445 Main St , Beacon , NY 12508</string>
+    <string name="entertainment_four"> El Teatro Probabilidad</string>
+    <string name="entertainment_one">Clavo cala Teatro Cena</string>
+    <string name="entertainment_three">Bardavon de la ópera</string>
+    <string name="entertainment_two">Teatro Beacon</string>
+    <string name="historic_Site_four">Isla Pollepel / Castillo Bannermans \'</string>
+    <string name="historic_Site_one">Inicio de Franklin D. Roosevelt National Historic Site</string>
+    <string name="historic_Site_three">Staatsburgh sitio histórico del estado</string>
+    <string name="historic_Site_two">Sitio Histórico Nacional Mansión Vanderbilt</string>
+    <string name="historic_site_address_four">Ubicación: Isla Pollepel, Newburgh, Nueva York</string>
+    <string name="historic_site_address_one">Dirección: 4097 Albany Post Rd, Hyde Park, NY 12538</string>
+    <string name="historic_site_address_three">Dirección: 75 Mills Mansion 6 Road, Staatsburg, NY 12580</string>
+    <string name="historic_site_address_two">Dirección: 119 Vanderbilt Park Rd, Hyde Park, NY 12538</string>
+    <string name="parks_address_four">Ubicación: lado oeste del río Hudson, Esopus, Nueva York</string>
+    <string name="parks_address_one">Dirección: 1498 Route 301 Carmel, NewYork</string>
+    <string name="parks_address_three">Ubicación: Lago Sylvan, Nueva York, Estados Unidos</string>
+    <string name="parks_address_two">Ubicación: Philipstown / Fishkill, New York, U.S.</string>
+    <string name="parks_four">Esopus prados de Luz</string>
+    <string name="parks_one">Clarence Fahnestock parque de estado</string>
+    <string name="parks_three">lago Sylvan</string>
+    <string name="parks_two"> vertiginosa de Ridge</string>
+    <string name="restaurants_address_four">Dirección: 1123 Main St, Fishkill, NY 12524</string>
+    <string name="restaurants_address_one">Dirección: Wappingers Falls, NY 12590</string>
+    <string name="restaurants_address_three">Dirección: 1106&#8211;1108 Main St, Fishkill, NY 12524</string>
+    <string name="restaurants_address_two">Dirección: 1113 Main St, Fishkill, NY 12524</string>
+    <string name="restaurants_four">EL CAFÉ DE TOMATE</string>
+    <string name="restaurants_one">Doble O Parrilla</string>
+    <string name="restaurants_three">Sapore Churrasquería</string>
+    <string name="restaurants_two">Il Barilotto Enoteca</string>
+</resources>

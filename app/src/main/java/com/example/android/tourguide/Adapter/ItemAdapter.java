@@ -11,11 +11,13 @@ import android.widget.TextView;
 
 import com.example.android.tourguide.Classes.TourItem;
 import com.example.android.tourguide.R;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
 /**
- * Created by samue_000 on 8/16/2016.
+ * The ItemAdapter is an {@link ArrayAdapter} used to display individual areas of interest
+ * on a fragment.
  */
 public class ItemAdapter extends ArrayAdapter<TourItem> {
     private int mBackgroundColor;
@@ -29,7 +31,7 @@ public class ItemAdapter extends ArrayAdapter<TourItem> {
     public View getView(int position, View convertView, ViewGroup parent) {
 
         View listItemView = convertView;
-        if(listItemView == null) {
+        if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
         }
 
@@ -44,7 +46,9 @@ public class ItemAdapter extends ArrayAdapter<TourItem> {
         ImageView icon = (ImageView) listItemView.findViewById(R.id.icon_image_view);
 
         if (currentItem.hasImage()) {
-            icon.setImageResource(currentItem.getImageResource());
+            Picasso.with(getContext())
+                    .load(currentItem.getImageResource())
+                    .into(icon);
             icon.setVisibility(View.VISIBLE);
         } else {
             icon.setVisibility(View.GONE);

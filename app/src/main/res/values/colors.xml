@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#03A9F4</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimary">#9C27B0</color>
+    <color name="colorPrimaryDark">#7B1FA2</color>
     <color name="colorAccent">#FF4081</color>
 
-    <color name="HistoricSitesPrimary">#03A9F4</color>
-    <color name="HistoricSitesDark">#0288D1</color>
+    <!-- Color for the historic sites tab fragment -->
+    <color name="historic_sites_primary">#03A9F4</color>
 
-    <color name="RestaurantsPrimary">#FF9800</color>
-    <color name="RestaurantsDark">#F57C00</color>
+    <!-- color for the restaurants tab fragment -->
+    <color name="restaurants_primary">#FF9800</color>
 
-    <color name="EntertainmentPrimary">#607D8B</color>
-    <color name="EntertainmentDark">#455A64</color>
+    <!-- color for the entertainment tab fragment -->
+    <color name="entertainment_primary">#607D8B</color>
 
-    <color name="ParksPrimary">#4CAF50</color>
-    <color name="ParksDark">#388E3C</color>
+    <!-- color fot the parks tab fragment -->
+    <color name="parks_primary">#4CAF50</color>
 
-    <color name="selectedTab">#76FF03</color>
+    <!-- color for the customized tab when unselected -->
+    <color name="unselected_tab">#BA68C8</color>
+
+    <!-- color for the customized tab when selected -->
+    <color name="selected_tab">#76FF03</color>
 
 </resources>

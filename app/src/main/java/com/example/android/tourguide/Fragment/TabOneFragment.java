@@ -19,11 +19,10 @@ import java.util.ArrayList;
 public class TabOneFragment extends Fragment {
 
     /**
-     *
-     * @param inflater
-     * @param container
-     * @param savedInstanceState
-     * @return
+     * @param inflater           is the layout inflater
+     * @param container          is the ViewGroup
+     * @param savedInstanceState is the Bundle for re-creating the fragment
+     * @return rootView as the View
      */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -35,15 +34,19 @@ public class TabOneFragment extends Fragment {
 
         //Tour item information to be displayed on Tab One
         tourItems.add(new TourItem(getString(R.string.historic_Site_one),
-                getString(R.string.historic_site_address_one)));
+                getString(R.string.historic_site_address_one),
+                R.drawable.fdr3));
         tourItems.add(new TourItem(getString(R.string.historic_Site_two),
-                getString(R.string.historic_site_address_two)));
+                getString(R.string.historic_site_address_two),
+                R.drawable.vanderbilt));
         tourItems.add(new TourItem(getString(R.string.historic_Site_three),
-                getString(R.string.historic_site_address_three)));
+                getString(R.string.historic_site_address_three),
+                R.drawable.staatsburgh));
         tourItems.add(new TourItem(getString(R.string.historic_Site_four),
-                getString(R.string.historic_site_address_four)));
+                getString(R.string.historic_site_address_four),
+                R.drawable.bannermans_castle_pollepel_island));
 
-        ItemAdapter itemAdapter = new ItemAdapter(getActivity(), tourItems, R.color.HistoricSitesPrimary);
+        ItemAdapter itemAdapter = new ItemAdapter(getActivity(), tourItems, R.color.historic_sites_primary);
 
         ListView listView = (ListView) rootView.findViewById(R.id.list);
         listView.setAdapter(itemAdapter);

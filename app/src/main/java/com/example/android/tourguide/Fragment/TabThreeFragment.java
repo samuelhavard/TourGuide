@@ -25,11 +25,10 @@ public class TabThreeFragment extends Fragment {
     }
 
     /**
-     *
-     * @param inflater
-     * @param container
-     * @param savedInstanceState
-     * @return
+     * @param inflater           is the layout inflater
+     * @param container          is the ViewGroup
+     * @param savedInstanceState is the Bundle for re-creating the fragment
+     * @return rootView as the View
      */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -41,15 +40,19 @@ public class TabThreeFragment extends Fragment {
 
         //Tour item information to be displayed on Tab Three
         tourItems.add(new TourItem(getString(R.string.entertainment_one),
-                getString(R.string.entertainment_address_one)));
+                getString(R.string.entertainment_address_one),
+                R.drawable.clove_creek));
         tourItems.add(new TourItem(getString(R.string.entertainment_two),
-                getString(R.string.entertainment_address_two)));
+                getString(R.string.entertainment_address_two),
+                R.drawable.beacon_theater));
         tourItems.add(new TourItem(getString(R.string.entertainment_three),
-                getString(R.string.entertainment_address_three)));
+                getString(R.string.entertainment_address_three),
+                R.drawable.bardavon));
         tourItems.add(new TourItem(getString(R.string.entertainment_four),
-                getString(R.string.entertainment_address_four)));
+                getString(R.string.entertainment_address_four),
+                R.drawable.the_chance_interior));
 
-        ItemAdapter itemAdapter = new ItemAdapter(getActivity(), tourItems, R.color.EntertainmentPrimary);
+        ItemAdapter itemAdapter = new ItemAdapter(getActivity(), tourItems, R.color.entertainment_primary);
 
         ListView listView = (ListView) rootView.findViewById(R.id.list);
         listView.setAdapter(itemAdapter);

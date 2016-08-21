@@ -1,7 +1,8 @@
 package com.example.android.tourguide.Classes;
 
 /**
- * Created by samue_000 on 8/16/2016.
+ * TourItem is a Class used to hold the data for a specific site of interest that is displaed in
+ * on a fragment via the ItemAdapter Class.
  */
 public class TourItem {
 
@@ -10,7 +11,7 @@ public class TourItem {
     private String mAddress;
     private int mImageResource = NO_IMAGE_PROVIDED;
 
-    public TourItem(String title , String address) {
+    public TourItem(String title, String address) {
         mTitle = title;
         mAddress = address;
     }
