@@ -41,21 +41,19 @@ public class TabFourFragment extends Fragment {
         final ArrayList<TourItem> tourItems = new ArrayList<>();
 
         //Tour item information to be displayed on Tab Four
-        tourItems.add(new TourItem("Four Test One", "Four Two"));
-        tourItems.add(new TourItem("Four Test Two", "Four Tow"));
-        tourItems.add(new TourItem("Four Test Three", "Four Two"));
+        tourItems.add(new TourItem("Clarence Fahnestock State Park",
+                "Address: 1498 Route 301 Carmel, New York"));
+        tourItems.add(new TourItem("Breakneck Ridge",
+                "Location: Philipstown / Fishkill, New York, U.S."));
+        tourItems.add(new TourItem("Sylvan Lake",
+                "Location: Sylvan Lake, New York, United States"));
+        tourItems.add(new TourItem("Esopus Meadows Light",
+                "Location: West side of Hudson River, Esopus, New York"));
 
         ItemAdapter itemAdapter = new ItemAdapter(getActivity(), tourItems, R.color.ParksPrimary);
 
         ListView listView = (ListView) rootView.findViewById(R.id.list);
         listView.setAdapter(itemAdapter);
-
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-
-            }
-        });
 
         return rootView;
     }

@@ -41,21 +41,19 @@ public class TabThreeFragment extends Fragment {
         final ArrayList<TourItem> tourItems = new ArrayList<>();
 
         //Tour item information to be displayed on Tab Three
-        tourItems.add(new TourItem("Three Test One", "Two three"));
-        tourItems.add(new TourItem("Three Test Two", "Two three"));
-        tourItems.add(new TourItem("Three Test Three", "Two Four"));
+        tourItems.add(new TourItem("Clove Creek Dinner Theater",
+                "Address: 18 Westage Business Center Dr #7, Fishkill, NY 12524"));
+        tourItems.add(new TourItem("Beacon Theatre",
+                "Address: 445 Main St, Beacon, NY 12508"));
+        tourItems.add(new TourItem("Bardavon Opera House",
+                "Address: 35 Market St, Poughkeepsie, NY 12601"));
+        tourItems.add(new TourItem("The Chance Theater",
+                "6 Crannell St, Poughkeepsie, NY 12601"));
 
         ItemAdapter itemAdapter = new ItemAdapter(getActivity(), tourItems, R.color.EntertainmentPrimary);
 
         ListView listView = (ListView) rootView.findViewById(R.id.list);
         listView.setAdapter(itemAdapter);
-
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-
-            }
-        });
 
         return rootView;
     }

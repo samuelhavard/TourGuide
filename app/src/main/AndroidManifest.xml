@@ -16,7 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Activity.TabOneActivity" />
-        <activity android:name=".Activity.TabTwoActivity"></activity>
+        <activity android:name=".Activity.TabTwoActivity" />
     </application>
 
 </manifest>

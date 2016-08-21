@@ -5,7 +5,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.example.android.tourguide.Adapter.ItemAdapter;
@@ -35,21 +34,19 @@ public class TabTwoFragment extends Fragment {
         final ArrayList<TourItem> tourItems = new ArrayList<>();
 
         //Tour item information to be displayed on Tab Two
-        tourItems.add(new TourItem("Tab Two Test One", "Two two", R.drawable.ic_restaurant_black_48dp));
-        tourItems.add(new TourItem("Tab Two Test Two", "two two"));
-        tourItems.add(new TourItem("Tab Two Test Three", "two two"));
+        tourItems.add(new TourItem("Double O Grill",
+                "Address: Wappingers Falls, NY 12590"));
+        tourItems.add(new TourItem("Il Barilotto Enoteca",
+                "1113 Main St, Fishkill, NY 12524"));
+        tourItems.add(new TourItem("Sapore Steakhouse",
+                "1106-1108 Main St, Fishkill, NY 12524"));
+        tourItems.add(new TourItem("THE TOMATO CAFE",
+                "1123 Main St, Fishkill, NY 12524"));
 
         ItemAdapter itemAdapter = new ItemAdapter(getActivity(), tourItems, R.color.RestaurantsPrimary);
 
-        ListView listView = (ListView) rootView.findViewById(R.id.list);
+        final ListView listView = (ListView) rootView.findViewById(R.id.list);
         listView.setAdapter(itemAdapter);
-
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-
-            }
-        });
 
         return rootView;
     }

@@ -35,21 +35,19 @@ public class TabOneFragment extends Fragment {
         final ArrayList<TourItem> tourItems = new ArrayList<>();
 
         //Tour item information to be displayed on Tab One
-        tourItems.add(new TourItem("Test One", "One Two"));
-        tourItems.add(new TourItem("Test Two", "One Two"));
-        tourItems.add(new TourItem("Test Three", "One Two"));
+        tourItems.add(new TourItem("Home of Franklin D. Roosevelt National Historic Site",
+                "Address: 4097 Albany Post Rd, Hyde Park, NY 12538"));
+        tourItems.add(new TourItem("Vanderbilt Mansion National Historic Site",
+                "Address: 119 Vanderbilt Park Rd, Hyde Park, NY 12538"));
+        tourItems.add(new TourItem("Staatsburgh State Historic Site",
+                "Address: 75 Mills Mansion 6 Road, Staatsburg, NY 12580"));
+        tourItems.add(new TourItem("Pollepel Island / Bannermans' Castle",
+                "Location: Pollepel Island, Newburgh, New York"));
 
         ItemAdapter itemAdapter = new ItemAdapter(getActivity(), tourItems, R.color.HistoricSitesPrimary);
 
         ListView listView = (ListView) rootView.findViewById(R.id.list);
         listView.setAdapter(itemAdapter);
-
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-
-            }
-        });
 
         return rootView;
     }
