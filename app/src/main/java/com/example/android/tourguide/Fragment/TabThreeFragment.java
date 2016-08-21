@@ -41,14 +41,14 @@ public class TabThreeFragment extends Fragment {
         final ArrayList<TourItem> tourItems = new ArrayList<>();
 
         //Tour item information to be displayed on Tab Three
-        tourItems.add(new TourItem("Clove Creek Dinner Theater",
-                "Address: 18 Westage Business Center Dr #7, Fishkill, NY 12524"));
-        tourItems.add(new TourItem("Beacon Theatre",
-                "Address: 445 Main St, Beacon, NY 12508"));
-        tourItems.add(new TourItem("Bardavon Opera House",
-                "Address: 35 Market St, Poughkeepsie, NY 12601"));
-        tourItems.add(new TourItem("The Chance Theater",
-                "6 Crannell St, Poughkeepsie, NY 12601"));
+        tourItems.add(new TourItem(getString(R.string.entertainment_one),
+                getString(R.string.entertainment_address_one)));
+        tourItems.add(new TourItem(getString(R.string.entertainment_two),
+                getString(R.string.entertainment_address_two)));
+        tourItems.add(new TourItem(getString(R.string.entertainment_three),
+                getString(R.string.entertainment_address_three)));
+        tourItems.add(new TourItem(getString(R.string.entertainment_four),
+                getString(R.string.entertainment_address_four)));
 
         ItemAdapter itemAdapter = new ItemAdapter(getActivity(), tourItems, R.color.EntertainmentPrimary);
 

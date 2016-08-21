@@ -34,14 +34,14 @@ public class TabTwoFragment extends Fragment {
         final ArrayList<TourItem> tourItems = new ArrayList<>();
 
         //Tour item information to be displayed on Tab Two
-        tourItems.add(new TourItem("Double O Grill",
-                "Address: Wappingers Falls, NY 12590"));
-        tourItems.add(new TourItem("Il Barilotto Enoteca",
-                "1113 Main St, Fishkill, NY 12524"));
-        tourItems.add(new TourItem("Sapore Steakhouse",
-                "1106-1108 Main St, Fishkill, NY 12524"));
-        tourItems.add(new TourItem("THE TOMATO CAFE",
-                "1123 Main St, Fishkill, NY 12524"));
+        tourItems.add(new TourItem(getString(R.string.restaurants_one),
+                getString(R.string.restaurants_address_one)));
+        tourItems.add(new TourItem(getString(R.string.restaurants_two),
+                getString(R.string.restaurants_address_two)));
+        tourItems.add(new TourItem(getString(R.string.restaurants_three),
+                getString(R.string.restaurants_address_three)));
+        tourItems.add(new TourItem(getString(R.string.restaurants_four),
+                getString(R.string.restaurants_address_four)));
 
         ItemAdapter itemAdapter = new ItemAdapter(getActivity(), tourItems, R.color.RestaurantsPrimary);
 

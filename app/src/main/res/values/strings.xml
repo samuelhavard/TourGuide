@@ -1,6 +1,53 @@
 <resources>
-    <string name="app_name">TourGuide</string>
+    <string name="app_name">Tour Guide</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--Historic Sites-->
+    <string name="historic_Site_one">Home of Franklin D. Roosevelt National Historic Site</string>
+    <string name="historic_Site_two">Vanderbilt Mansion National Historic Site</string>
+    <string name="historic_Site_three">Staatsburgh State Historic Site</string>
+    <string name="historic_Site_four">Pollepel Island / Bannermans\' Castle</string>
+
+    <!--Historic Sites Addresses-->
+    <string name="historic_site_address_one">Address: 4097 Albany Post Rd, Hyde Park, NY 12538</string>
+    <string name="historic_site_address_two">Address: 119 Vanderbilt Park Rd, Hyde Park, NY 12538</string>
+    <string name="historic_site_address_three">Address: 75 Mills Mansion 6 Road, Staatsburg, NY 12580</string>
+    <string name="historic_site_address_four">Location: Pollepel Island, Newburgh, New York</string>
+
+    <!--Restaurants-->
+    <string name="restaurants_one">Double O Grill</string>
+    <string name="restaurants_two">Il Barilotto Enoteca</string>
+    <string name="restaurants_three">Sapore Steakhouse</string>
+    <string name="restaurants_four">THE TOMATO CAFE</string>
+
+    <!--Restaurants addresses-->
+    <string name="restaurants_address_one">Address: Wappingers Falls, NY 12590</string>
+    <string name="restaurants_address_two">1113 Main St, Fishkill, NY 12524</string>
+    <string name="restaurants_address_three">1106-1108 Main St, Fishkill, NY 12524</string>
+    <string name="restaurants_address_four">1123 Main St, Fishkill, NY 12524</string>
+
+    <!--Entertainment-->
+    <string name="entertainment_one">Clove Creek Dinner Theater</string>
+    <string name="entertainment_two">Beacon Theatre</string>
+    <string name="entertainment_three">Bardavon Opera House</string>
+    <string name="entertainment_four">The Chance Theater</string>
+
+    <!--Entertainment Addresses-->
+    <string name="entertainment_address_one">Address: 18 Westage Business Center Dr #7, Fishkill, NY 12524</string>
+    <string name="entertainment_address_two">Address: 445 Main St, Beacon, NY 12508</string>
+    <string name="entertainment_address_three">Address: 35 Market St, Poughkeepsie, NY 12601</string>
+    <string name="entertainment_address_four">Address: 6 Crannell St, Poughkeepsie, NY 12601</string>
+
+    <!--Parks-->
+    <string name="parks_one">Clarence Fahnestock State Park</string>
+    <string name="parks_two">Breakneck Ridge</string>
+    <string name="parks_three">Sylvan Lake</string>
+    <string name="parks_four">Esopus Meadows Light</string>
+
+    <!--Park Locations / Addresses-->
+    <string name="parks_address_one">Address: 1498 Route 301 Carmel, New York</string>
+    <string name="parks_address_two">Location: Philipstown / Fishkill, New York, U.S.</string>
+    <string name="parks_address_three">Location: Sylvan Lake, New York, United States</string>
+    <string name="parks_address_four">Location: West side of Hudson River, Esopus, New York</string>
+
+
 </resources>
