@@ -16,4 +16,6 @@
     <color name="ParksPrimary">#4CAF50</color>
     <color name="ParksDark">#388E3C</color>
 
+    <color name="selectedTab">#76FF03</color>
+
 </resources>
