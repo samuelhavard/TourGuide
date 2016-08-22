@@ -50,5 +50,10 @@
     <string name="parks_address_four">Location: West side of Hudson River, Esopus, New York</string>
     <string name="location_image">Location Image</string>
 
+    <!-- Tab Titles -->
+    <string name="historic_sites">Historic Sites</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="entertainment">Entertainment</string>
+    <string name="parks">Parks</string>
 
 </resources>
